@@ -13,24 +13,45 @@ class BenchmarkSwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+    func testPerformanceFinal() {
+
         self.measureBlock {
-            // Put the code you want to measure the time of here.
+
+			let methodInvokerFinal = MethodInvokerFinal()
+
+			for _ in 1...1000000 {
+				methodInvokerFinal.callMe()
+			}
         }
     }
-    
+
+	func testPerformanceSwift() {
+
+		self.measureBlock { 
+
+			let methodInvokerSwift = MethodInvokerSwift()
+
+			for _ in 1...1000000 {
+				methodInvokerSwift.callMe()
+			}
+		}
+	}
+
+	func testPerformanceObjc() {
+
+		self.measureBlock { 
+
+			let methodInvokerObjc = MethodInvokerObjc()
+
+			for _ in 1...1000000 {
+				methodInvokerObjc.callMe()
+			}
+		}
+	}
 }

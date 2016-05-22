@@ -14,6 +14,7 @@
 		6DA3489B1CF0ADF900331E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA348991CF0ADF900331E41 /* LaunchScreen.storyboard */; };
 		6DA348A61CF0ADF900331E41 /* BenchmarkSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA348A51CF0ADF900331E41 /* BenchmarkSwiftTests.swift */; };
 		6DA348B11CF0ADF900331E41 /* BenchmarkSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA348B01CF0ADF900331E41 /* BenchmarkSwiftUITests.swift */; };
+		6DA348BF1CF0AE1D00331E41 /* MethodInvokers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA348BE1CF0AE1D00331E41 /* MethodInvokers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6DA348AC1CF0ADF900331E41 /* BenchmarkSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenchmarkSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA348B01CF0ADF900331E41 /* BenchmarkSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkSwiftUITests.swift; sourceTree = "<group>"; };
 		6DA348B21CF0ADF900331E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA348BE1CF0AE1D00331E41 /* MethodInvokers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MethodInvokers.swift; path = ../MethodInvokers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				6DA348901CF0ADF900331E41 /* AppDelegate.swift */,
 				6DA348921CF0ADF900331E41 /* ViewController.swift */,
+				6DA348BE1CF0AE1D00331E41 /* MethodInvokers.swift */,
 				6DA348941CF0ADF900331E41 /* Main.storyboard */,
 				6DA348971CF0ADF900331E41 /* Assets.xcassets */,
 				6DA348991CF0ADF900331E41 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA348BF1CF0AE1D00331E41 /* MethodInvokers.swift in Sources */,
 				6DA348931CF0ADF900331E41 /* ViewController.swift in Sources */,
 				6DA348911CF0ADF900331E41 /* AppDelegate.swift in Sources */,
 			);
